@@ -1,0 +1,447 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h1{
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+h2{
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+}
+p{
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+strong{
+    color: #e73c7e;
+}
+
+header{
+    width: 100%;
+    background-color: #bbb5b8df;
+    height: 8%;
+    position: fixed;
+
+}
+
+#btn-menu,
+.iconMenu,
+.iconClose{
+    display: none;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    font-size: 18px;
+
+}
+ul a:hover{
+    color: violet;
+    text-decoration: solid;
+}
+a{
+    display: block;
+    text-decoration: none;
+    font-family: "Irish Grover", system-ui;
+    color: black;
+    font-size: 1.125rem;
+    padding: 20px;
+    gap: 1.6em;
+}
+
+.titulodos{
+    background-color: black;
+    height: 37.5rem;
+    background-image: url("../assets/portada.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    justify-content: initial;
+    color: white;
+    font-weight: 400;
+}
+.titulodos h1{
+    margin-right: 3.125rem;
+    margin-top: 6.25rem;
+    font-size: 1.875rem;
+}
+.titulodos h2{
+    margin-right: 3.125rem;
+    font-size: 1.875rem;
+}
+
+
+.parrafo{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    align-self: flex-end;
+    top: 20%;
+    left: 40%;
+}
+
+
+.enlaces {
+
+    height: 25rem;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    padding: 1.875rem;
+}
+
+
+.enlaces div a{
+    color: white;
+    font-weight: 12.5rem;
+    font-size: 1.5625rem;
+    font-family: "Irish Grover", system-ui;
+    margin-bottom: 20%;
+    margin-left: 3.125rem;
+    
+}
+.enlaces img{
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    height: 15.625rem;
+    width: 15.625rem;
+    padding: 2.5rem;
+}
+.parrafo{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+}
+.parrafo p{
+    justify-content: left;
+    text-align: justify;
+    line-height: 30px;
+    padding-top: -10px;
+    padding-left: 1.875rem;
+    
+}
+.parrafo img{
+    width: 500%;
+    height: 500%;
+    padding: 1.25rem;
+}
+.expe{
+    padding: 90px 0;
+    text-align: center;
+    font-size: 1.25rem;
+    color: white;
+}
+
+
+.container{
+    display: grid;
+    color: white;
+    background-color: black;
+    background-position: center;
+    margin: 1.6em auto;
+    width: 90%;
+    gap: 1.6em;
+    grid-template-areas: 
+                        "article1 img1 img1 img1"
+                        "img2 img2 img2 article2"
+                        "article3 img3 img3 img3";
+    grid-template-columns: 30% 15% 15% 30%;
+}
+.article1{
+    grid-area: article1;
+    padding: 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+.img1{
+    grid-area: img1;
+}
+.artilce2{
+    grid-area: article2;
+    padding: 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+.img2{
+    grid-area: img2;
+}
+.article3{
+    grid-area: article3;
+    padding: 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+.img3{
+    grid-area: img3;
+}
+.container article{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: justify;
+    font-family: "Work Sans", sans-serif;
+    justify-content: space-around;
+
+}
+.divertirte{    
+    padding: 90px 0;
+    text-align: center;
+    font-size: 1.25rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.nosotras{
+    margin: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center center;
+    gap: 2.6em;
+}
+.nosotras p{
+    background-color: rgba(0, 0, 0, 0.292);
+    color: white;
+    line-height: 30px;
+    font-size: 1.25rem;
+    text-align: justify;
+    padding-left: 15px;
+}
+
+.nosotras1{
+    background-color: rgba(0, 0, 0, 0.292);
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    margin: 90px;
+    justify-content: center;
+    gap: 2.6em;
+}
+.nosotras1 p{
+    color: white;
+    line-height: 30px;
+    font-size: 1.25rem;
+    text-align:justify;
+    padding-left: 15px;
+}
+.nosotras1 img{
+    height: 500px;
+    margin-top: -9%;
+    background-position: 40px;
+} 
+.nosotras2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 90px;
+    gap: 2.6em;
+}
+.nosotras2 p{
+    font-size: 1.25rem;
+    text-align: justify;
+    line-height: 30px;
+    padding-top: 90px;
+}
+.nosotras2 img{
+    width: 100%;
+}
+.contacto{    
+    padding: 90px 0;
+    text-align: center;
+    font-size: 1.25rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.form{
+    padding: 90px;
+}
+
+fieldset{
+    background-color: violet;
+    color: rgb(26, 24, 26);
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+input{
+    height: 30px;
+}
+.form p{
+    color: rgb(9, 9, 9);
+    line-height: 30px;
+    font-size: 1.25rem;
+    text-align:center;
+    padding-left: 15px;
+    padding-top: 90px;
+}
+.form h3{
+    color: rgb(238, 230, 230);
+    font-family: "Irish Grover", system-ui;
+    font-size: 40px;
+    text-align:center;
+    margin: 100px;
+    padding-left: 15px;
+}
+footer { 
+    background-color: #ff3effcc;
+    color: black;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+}
+footer p {
+    text-align: center;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+footer ul {
+    text-align: center;
+}
+
+
+@media(max-width: 799px){
+    .iconClose,
+    .iconMenu {
+        display: block;
+        padding: 13px;
+        cursor: pointer;
+    }
+    .menu {
+        width: 100%; background-color: #e73c7e;
+        position: absolute;
+        transform: translateY(-200%);
+        transition: all 1s;
+        animation: desaparece 1s 1;
+        top: 0;
+    }
+    .parrafo{
+        display: flex;
+        flex-direction: column;
+        margin: 0% auto;
+    }
+    .parrafo p{
+    padding: 20px 20px;
+
+    }
+    .parrafo img{
+        width: 100%;
+    }
+    .enlaces {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: 40%;
+        margin: 10% 25%;
+        
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    height: 60%;
+    }
+    .nosotras {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0% auto;
+    }
+    .nosotras p{
+        padding: 20px 20px;
+    }
+    .nosotras1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+        margin: 60px auto;
+    }
+    .nosotras1 p{
+        padding: 10px 20px;
+    }
+    .nosotras2{
+        display: none;
+    }
+    @keyframes desaparece {
+        0%,
+        100% {
+        margin-top: -100%;
+        }
+    }
+    ul {
+        flex-direction: column;
+    }
+    li {
+        border-bottom: 1px solid rgb(149, 113, 54, 0.6);
+        background-color: black;
+    }
+    #btn-menu:checked~.menu {
+        transform: translateY(0);
+        transition: all 1s;
+    }
+    li:nth-child(n+2):nth-child(-n+6):hover {
+        background-color: #2240af45;
+    }
+
+}
+
+
+
+
+
+
+
